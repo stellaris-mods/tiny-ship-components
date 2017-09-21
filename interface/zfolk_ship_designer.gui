@@ -1,0 +1,220 @@
+guiTypes = {
+	containerWindowType = {
+		name = "component_set_entry"
+		position = { x=0 y=0 }
+		size = { width = 240 height = 34 }
+		moveable = no
+
+		containerWindowType = {
+			name = "component_entry_bg"
+			position = { x = -5 y = -4 }
+			size = { width = 250 height = 40 }
+			background = {
+				name = "background"
+				position = { x = -7 y = -8 }
+				quadTextureSprite = "GFX_zfolk_component_button"
+			}
+		}
+
+		containerWindowType = {
+			name = "selected_overlay"
+			position = { x = -5 y = -5 }
+			size = { width = 249 height = 40 }
+			background = {
+				name = "selected_background"
+				alwaystransparent = yes
+				quadTextureSprite = "GFX_glow_tile_orange"
+			}
+		}
+
+		iconType = {
+			name ="icon_bg"
+			spriteType = "GFX_ship_part_background"
+			position = { x= -5 y = -2 }
+			alwaystransparent = yes
+			scale = 0.5
+		}
+
+		iconType = {
+			name ="icon"
+			spriteType = "GFX_ship_part_background"
+			position = { x= 2 y = 1 }
+			alwaystransparent = yes
+			scale = 0.5
+		}
+
+		instantTextBoxType={
+			name = "name"
+			font = "cg_16b"
+			text = ""
+			position = { x= 34 y= 7 }
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			text_color_code = "H"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "stats"
+			font = "cg_16b"
+			text = ""
+			position = { x= 52 y= 27 }
+			maxWidth = 200
+			maxHeight = 30
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+
+		@typeicony = 8
+		@slot1 = 188
+		@slot2 = 204
+		@slot3 = 220
+
+		iconType = {
+			name ="pd_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 1
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="small_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 2
+			position = { x= @slot1 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="medium_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 3
+			position = { x= @slot2 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="large_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 4
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="torpedo_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 5
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="extra_large_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 6
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="aux_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 7
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+		iconType = {
+			name ="strike_craft_icon"
+			spriteType = "GFX_component_slot_icons"
+			frame = 9
+			position = { x= @slot3 y = @typeicony }
+			scale = 0.7
+		}
+	}
+
+	# XXX MODIFIED
+	containerWindowType = {
+		name = "component_select_window"
+		position = { x = 0 y = 0  }
+		size = { width = 265 height = 842 }
+
+
+		moveable = no
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tile_outliner_bg"
+		}
+
+		instantTextBoxType = {
+			name = "select_component_lable"
+			font = "malgun_goth_24"
+			text = "SELECT_COMPONENT"
+			position = { x = 55 y = 8 }
+			maxWidth = 170
+			maxHeight = 20
+			#Orientation = "UPPER_LEFT"
+			text_color_code = "H"
+		}
+
+		instantTextBoxType = {
+			name = "select_component_desc"
+			font = "cg_16b"
+			text = "SELECT_COMPONENT_DESC"
+			position = { x = -1000 y = -1000  }
+			maxWidth = 240
+			maxHeight = 40
+			text_color_code = "H"
+			#Orientation = "UPPER_LEFT"
+		}
+
+		iconType = {
+			name = "current_filter_slot_size"
+			spriteType = "GFX_component_slot_icons"
+			position = { x = 10 y = 32 }
+		}
+
+		checkboxType = {
+			name = "filter_slot_size"
+			position = { x = 33 y = 28 }
+			quadTextureSprite = "GFX_checkbox_20_20_01"
+			orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "filter_slot_size_label"
+			font = "cg_16b"
+			text = "SHIP_COMPONENTS_FILTER_SLOT_SIZE"
+			position = { x = 63 y = 28 }
+			maxWidth = 220
+			maxHeight = 30
+			orientation = "UPPER_LEFT"
+			format = left
+			vertical_alignment = center
+		}
+
+		smoothListBoxType = {
+			name = "list"
+			position = { x = 10 y = 60 }
+			size = { x = 240 y = 730 }
+			scrollbartype = "standardlistbox_slider"
+		}
+
+		buttonType = {
+			name = "close"
+			quadTextureSprite = "GFX_close"
+			position = { x= -45 y = 13 }
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+		}
+
+		buttonType = {
+			name = "apply_on_empty"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x= 49 y = 788 }
+			Orientation = "UPPER_LEFT"
+			buttonFont = "cg_16b"
+			buttonText = "APPLY_ON_EMPTY"
+		}
+	}
+}

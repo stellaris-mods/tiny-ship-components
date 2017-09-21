@@ -1,0 +1,41 @@
+spriteTypes = {
+	# spriteType = {
+	# 	name = "GFX_zfolk_small"
+	# 	textureFile = "gfx/interface/buttons/zfolk_small_entry.dds"
+	# 	noOfFrames = 3
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	# }
+	# spriteType = {
+	# 	name = "GFX_zfolk_small_selected"
+	# 	textureFile = "gfx/interface/buttons/zfolk_small_entry_selected.dds"
+	# 	noOfFrames = 3
+	# 	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	# }
+	#corneredTileSpriteType = {
+	#	name = "GFX_zfolk_glow_green"
+	#	#textureFile = "gfx/interface/zfolkglowgreen.dds"
+	#	textureFile = "gfx/interface/zfolkglowdarkgreen.dds"
+	#	borderSize = { x=12 y=12 }
+	#	effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	#}
+	spriteType = {
+		name = "GFX_zfolk_component_button"
+		texturefile = "gfx/interface/button_240_animated.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/button_240_animated_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/button_142_animated_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 60.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+		hitbox_margin = { x=11 y=11 }
+	}
+}
