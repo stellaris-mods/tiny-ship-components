@@ -192,10 +192,29 @@ guiTypes = {
 			vertical_alignment = center
 		}
 
+		checkboxType = {
+			name = "filter_obsolete"
+			position = { x = 33 y = 58 }
+			quadTextureSprite = "GFX_checkbox_20_20_01"
+			orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "filter_obsolete_label"
+			font = "cg_16b"
+			text = "SHIP_COMPONENTS_FILTER_OBSOLETE"
+			position = { x = 63 y = 58 }
+			maxWidth = 220
+			maxHeight = 30
+			orientation = "UPPER_LEFT"
+			format = left
+			vertical_alignment = center
+		}
+
 		smoothListBoxType = {
 			name = "list"
-			position = { x = 10 y = 60 }
-			size = { x = 240 y = 730 }
+			position = { x = 10 y = 90 }
+			size = { x = 240 y = 700 }
 			scrollbartype = "standardlistbox_slider"
 		}
 
